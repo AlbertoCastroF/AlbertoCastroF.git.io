@@ -1,0 +1,392 @@
+/* ----------REGLAS GENERALES-------- */
+:root {
+ --main-logo: #3366cf;
+ --search-bar: #36c;
+ --titles: #54595d;
+ --body-font: #54595d;
+ --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+ box-sizing: border-box;
+ font-family: Georgia, 'Times New Roman', Times, serif, Helvetica, sans-serif;
+ color: var(--body-font);
+}
+
+body {
+ margin: 10px 0;
+}
+
+a {
+ text-decoration: none;
+ color: var(--main-logo);
+}
+
+p {
+ margin: 0;
+}
+
+
+/* ----------AQUI EMPIEZA EL HEADER-------- */
+
+.header {
+ text-align: center;
+ margin-top: 4rem;
+ margin-bottom: 1.2rem;
+}
+
+.header img {
+ width: 11rem;
+}
+
+.header p {
+ font-size: 15px;
+ font-weight: 400;
+ color: black;
+ margin-top: 5px;
+}
+
+/* ----------AQUI TERMINA EL HEADER-------- */
+
+/* ----------AQUI EMPIEZA EL MAIN BODY-------- */
+
+.main-logo {
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ background-image: url("../pics/Wikipedia_logo.png");
+ background-repeat: no-repeat;
+ background-position: center;c
+ background-size: 13rem;
+ display: grid;
+ position: relative;
+ line-height: 1.6;
+ width: 44rem;
+ max-width: 100%;
+ margin: 0 auto;
+ text-align: center;
+ grid-template-rows: repeat(5, 4rem);
+ grid-template-areas: "first-row"
+                      "second-row"
+                      "third-row"
+                      "fourth-row"
+                      "fifth-row";
+ object-fit: contain;
+}
+
+.main-logo div p {
+ font-size: 13px;
+}
+
+.first-row {
+ grid-area: first-row;
+ display: flex;
+}
+
+.first-row .lang-1 {
+ position: absolute;
+ top: 0;
+ right: 60%;
+}
+
+.first-row .lang-2 {
+ position: absolute;
+ top: 0;
+ left: 60%;
+}
+
+.second-row {
+ grid-area: second-row;
+ display: flex;
+}
+
+.second-row .lang-3 {
+ position: absolute;
+ top: 20%;
+ right: 70%; 
+}
+
+.second-row .lang-4 {
+ position: absolute;
+ top: 20%;
+ left: 70%; 
+}
+
+.third-row {
+ grid-area: third-row;
+ display: flex;
+}
+
+.third-row .lang-5 {
+ position: absolute;
+ top: 40%;
+ right: 72%;
+}
+
+.third-row .lang-6 {
+ position: absolute;
+ top: 40%;
+ left: 72%;
+}
+
+.fourth-row {
+ grid-area: fourth-row;
+ display: flex;
+}
+
+.fourth-row .lang-7 {
+ position: absolute;
+ top: 60%;
+ right: 70%;
+}
+
+.fourth-row .lang-8 {
+ position: absolute;
+ top: 60%;
+ left: 70%;
+}
+
+
+.fifth-row {
+ grid-area: fifth-row;
+ display: flex;
+}
+
+.fifth-row .lang-9 {
+ position: absolute;
+ top: 80%;
+ right: 60%;
+}
+
+.fifth-row .lang-10 {
+ position: absolute;
+ top: 80%;
+ left: 60%;
+}
+
+/* ----------AQUI EMPIEZA LA BARRA DE BUSQUEDA-------- */
+
+.search-bar-container {
+ margin: .4rem auto 1.95rem;
+ width: 400px;
+ position: relative;
+ display: block;
+ 
+}
+
+.input-container {
+ position: relative;
+}
+
+.input-container input:focus {
+ outline: 2px solid var(--main-logo);
+ outline-offset: -2px;
+}
+
+.search-bar {
+ display: flex;
+ position: relative;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ /* outline: 1px solid #a2a9b1;
+ outline-offset: -1px; */
+}
+
+.search-bar .input-container {
+ width: 100%;
+}
+
+.search-bar input {
+ width: 100%;
+ height: 2.5rem;
+ outline: 1px solid #a2a9b1;
+ outline-offset: -1px;
+}
+
+.search-bar .fa-angle-down {
+ padding-left: 1.2rem;
+ font-size: 1rem;
+ position: absolute;
+ top: 25%;
+}
+
+.search-bar .dropdown-lan-menu {
+ display: flex;
+ position: absolute;
+ top: 25%;
+ right: 15%;
+ font-size: .8rem;
+}
+
+.input-container .dropdown-lan-menu p {
+ /* padding-right: .6rem; */
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.icon {
+ position: absolute;
+ right: -5%;
+ bottom: 0%;
+ text-align: center;
+ width: 3rem;
+ height: 2.87rem;
+ /* color: white; */
+ background: var(--main-logo);
+}
+
+.icon i {
+ position: absolute;
+ top: 25%;
+ right: 25%;
+ color: white;
+ font-size: 1.5rem;
+}
+/* ----------AQUI TERMINA EL SEARCH BAR-------- */
+
+/* ----------AQUI EMPIEZA EL READ WIKI-------- */
+
+.read-wiki-container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 0 auto;
+ min-width: 500px;
+}
+
+.read-wiki {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: var(--main-logo);
+ padding: .6rem .8rem;
+ border: 1px solid #a2a9b1;
+ min-width: 223.656px;
+ height: 10px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-weight: 700;
+ margin: 0 2rem;
+ background: #f8f9fa;
+ cursor: pointer;
+}
+
+.read-wiki:hover {
+ background: initial;
+}
+
+.read-wiki p {
+ margin: 0 .64rem;
+ font-size: .8rem;
+}
+
+.left-line {
+ border-bottom: 2px solid #c8ccd1;
+ width: 80px;
+ height: 0
+}
+
+.right-line {
+ border-bottom: 2px solid #c8ccd1;
+ width: 80px;
+ height: 0;
+}
+
+hr {
+ margin: 2rem;
+ border: 1px solid #c8ccd1;
+}
+
+/* ----------AQUI TERMINA EL READ WIKI-------- */
+
+/* ----------AQUI EMPIEZA LINKS CONTAINER------- */
+
+.links-container {
+ display: grid;
+ grid-template-columns: minmax(100px, 1fr) minmax(100px, 2fr);
+ grid-template-rows: auto auto;
+ grid-template-areas: "wiki-about links"
+                      "android links";
+                      
+column-gap: 5rem;
+font-size: 14px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* margin: 0 9rem; */
+}
+
+.wiki-about {
+ grid-area: wiki-about;
+ display: flex;
+ margin-bottom: 2rem;
+
+}
+
+
+.android-ios-wiki {
+ grid-area: android;
+ display: flex;
+ /* flex-wrap: wrap; */
+ background: #f8f9fa;
+ background-size: contain;
+ /* padding-right: 3rem; */
+}
+
+
+.download .title {
+ font-weight: 700;
+ margin-bottom: 1rem;
+}
+
+.download .app-buttons {
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+}
+
+.download .app-buttons img{
+ width: 120px;
+ height: initial;
+}
+
+
+.links {
+ grid-area: links;
+ display: grid;
+ grid-template-columns: repeat(3, minmax(100px, 300px));
+ grid-template-rows: repeat(4, auto);
+ row-gap: 3rem;
+ column-gap: 3rem;
+}
+.link .title {
+ color: var(--main-logo);
+}
+
+.links-container img {
+ width: 42px;
+ height: 42px;
+ margin-right: 10px;
+}
+
+.links .link {
+ display: flex;
+ cursor: pointer;
+}
+
+/* ----------AQUI TERMINA LINKS CONTAINER------- */
+
+/* ----------AQUI EMPIEZA EL FOOTER------- */
+footer {
+ margin-top: 3rem;
+ margin-bottom: 1rem;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer small {
+ display: flex;
+ justify-content: center;
+}
+
+footer a {
+ margin-left: .3rem;
+}
+
+footer li {
+ margin-left: 1rem;
+}
