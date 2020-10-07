@@ -54,7 +54,7 @@ p {
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  background-image: url("../pics/Wikipedia_logo.png");
  background-repeat: no-repeat;
- background-position: center;c
+ background-position: center;
  background-size: 13rem;
  display: grid;
  position: relative;
@@ -308,7 +308,7 @@ hr {
 column-gap: 5rem;
 font-size: 14px;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-/* margin: 0 9rem; */
+margin: 0 9rem;
 }
 
 .wiki-about {
