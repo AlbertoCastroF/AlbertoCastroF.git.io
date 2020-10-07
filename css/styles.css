@@ -200,6 +200,7 @@ p {
  height: 2.5rem;
  outline: 1px solid #a2a9b1;
  outline-offset: -1px;
+ font-size: 18px;
 }
 
 .search-bar .fa-angle-down {
@@ -303,8 +304,7 @@ hr {
  grid-template-columns: minmax(100px, 1fr) minmax(100px, 2fr);
  grid-template-rows: auto auto;
  grid-template-areas: "wiki-about links"
-                      "android links";
-                      
+                      "android links";                   
 column-gap: 5rem;
 font-size: 14px;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -390,3 +390,133 @@ footer a {
 footer li {
  margin-left: 1rem;
 }
+
+/* ----------AQUI TERMINA EL FOOTER------- */
+
+/* ----------AQUI EMPIEZAN LOS MEDIA QUIERIES------- */
+
+@media(max-width: 900px) {
+
+ .links-container {
+  display: grid;
+  grid-template-columns: auto;   
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "wiki-about"
+                       "android"
+                       "links";  
+  row-gap: 5rem;   
+  margin: 0 1rem;
+  min-width: 600px;
+ }
+ 
+ .links {
+  grid-area: links;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 300px));
+  grid-template-rows: repeat(4, auto);
+  row-gap: 3rem;
+  column-gap: 3rem;
+  min-width: 600px;
+ }
+
+
+ footer {
+  display: flex;
+  flex-wrap: wrap;
+ }
+
+}
+
+@media(max-width: 600px) {
+
+ .search-bar-container {
+  min-width: 400px;
+  position: absolute;
+  top: 0;
+  right: auto;
+  left: 100px;
+ }
+
+ .left-line,
+ .right-line {
+  display: none;
+ }
+
+ .read-wiki-container {
+  min-width: 600px;
+ }
+
+ .header {
+  min-width: 600px;
+  margin-top: 5rem;
+ }
+
+ .main-logo {
+  position: initial;
+  background: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 600px;
+  height: 20rem;
+  margin: 0 auto;
+  
+ }
+
+
+ .first-row .lang-1 {
+  position: initial;
+  grid-area: a;
+ }
+ 
+ .first-row .lang-2 {
+  position: initial;
+  grid-area: b;
+ }
+ 
+ .second-row .lang-3 {
+  position: initial;
+  grid-area: c;
+ }
+ 
+ .second-row .lang-4 {
+  position: initial;
+  grid-area: d;
+ }
+ 
+ .third-row .lang-5 {
+  position: initial;
+  grid-area: e;
+ }
+ 
+ .third-row .lang-6 {
+  position: initial;
+  grid-area: f;
+ }
+ 
+ .fourth-row .lang-7 {
+  position: initial;
+  grid-area: g;
+ }
+ 
+ .fourth-row .lang-8 {
+  position: initial;
+  grid-area: h;
+ }
+ 
+ .fifth-row .lang-9 {
+  position: initial;
+  grid-area: i;
+ }
+ 
+ .fifth-row .lang-10 {
+  position: initial;
+  grid-area: j;
+ }
+ 
+
+}
+
+
+/* ----------AQUI TERMINAN LOS MEDIA QUIERIES------- */
+
